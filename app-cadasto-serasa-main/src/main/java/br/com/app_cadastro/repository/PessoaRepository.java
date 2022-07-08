@@ -10,7 +10,7 @@ import br.com.app_cadastro.domain.entity.Pessoa;
 @Repository
 public interface  PessoaRepository  extends JpaRepository<Pessoa, Long>{
 
-	//Faz a paginação
+	//Faz a paginação e busca pelo nome
 	Page<Pessoa> findByNome(String nome, Pageable pageable);
 
 }
